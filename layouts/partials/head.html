@@ -72,5 +72,6 @@
     {{ template "_internal/google_analytics.html" . }}
 {{- end}}
 
-{{ if .Params.mathjax}}{{ partial "mathjax_support.html" . }}{{ end }}
-
+{{- if .Params.mathjax -}}
+    {{ partial "mathjax.html" . }}
+{{- end }}
